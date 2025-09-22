@@ -1,0 +1,109 @@
+@import "../../assets/styles/scssPartials/colors";
+//whole animation is due to visual bugs when loading screen is appearing
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+header {
+  animation: fadeIn 1000ms;
+}
+.typed-cursor {
+  display: none;
+}
+header h1 {
+  width: 1100px;
+  font-size: 80px;
+  letter-spacing: -4px;
+  line-height: 90px;
+}
+header h1 span.red {
+  color: $red;
+}
+header p {
+  width: 960px;
+
+  margin-block: 50px;
+}
+header .header-wrap {
+  display: flex;
+  align-items: center;
+}
+header .header-wrap button {
+  margin-right: 30px;
+}
+header .socials a {
+  margin-left: 15px;
+}
+header .socials a:first-child {
+  margin-left: 0px;
+}
+header button {
+  padding-block: 5px;
+  padding-inline: 20px;
+
+  letter-spacing: -1px;
+  line-height: 32px;
+
+  font-size: 15px;
+  text-transform: uppercase;
+}
+@media (max-width: 1440px) {
+  header h1 {
+    width: 1000px;
+    font-size: 75px;
+  }
+}
+@media (max-width: 1024px) {
+  header h1 {
+    width: 750px;
+    font-size: 58px;
+  }
+  header p {
+    width: 720px;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    text-align: center;
+  }
+  header h1 {
+    width: 100%;
+
+    font-size: 45px;
+    line-height: 64px;
+  }
+  header p {
+    width: 100%;
+
+    margin-block: 40px;
+  }
+  header .header-wrap {
+    display: block;
+  }
+  header .header-wrap button {
+    margin-right: 0px;
+  }
+  header .socials {
+    margin-top: 40px;
+  }
+  header .socials svg {
+    height: 25px;
+    width: 35px;
+  }
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: -2px;
+  }
+  header p {
+    font-size: 14px;
+  }
+}

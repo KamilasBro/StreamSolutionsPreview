@@ -1,0 +1,148 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./scssPartials/colors";
+@import "./scssPartials/initialSetter";
+@font-face {
+  font-family: "Conthrax";
+  src: local("Conthrax"), url("../fonts/conthrax-sb.otf") format("otf");
+}
+//basic
+:root {
+  scroll-behavior: auto !important;
+}
+body {
+  margin: 0;
+  background-color: $bg;
+  color: white;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: $red;
+  border-radius: 9px;
+}
+::-webkit-scrollbar-track {
+  background: $scrollbg;
+}
+button,
+.dropdown-menu {
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  background-color: $red;
+}
+h3 {
+  font-size: 30px;
+  line-height: 57px;
+}
+p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 38px;
+}
+svg {
+  shape-rendering: geometricPrecision;
+}
+
+//width of whole page
+.app {
+  width: 1520px;
+}
+
+//maintenance prompt
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.info-prompt {
+  animation: fadeIn 1000ms;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+
+  padding-block: 14px;
+  padding-left: 121px;
+  padding-right: 26px;
+
+  background-color: $red;
+
+  color: $bg;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+.info-prompt svg {
+  margin-left: 200px;
+}
+
+@media (max-width: 1600px) {
+  //width of whole page
+  .app {
+    width: 1400px;
+  }
+
+  //maintenance prompt
+  .info-prompt {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1440px) {
+  //width of whole page
+  .app {
+    width: 1000px;
+  }
+
+  //maintenance prompt
+  .info-prompt {
+    font-size: 12px;
+  }
+  .info-prompt svg {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  //width of whole page
+  .app {
+    width: 750px;
+  }
+}
+@media (max-width: 800px) {
+  //width of whole page
+  .app {
+    width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  //basic
+  h3 {
+    font-size: 25px;
+    line-height: 57px;
+  }
+
+  //width of whole page
+  .app {
+    width: 310px;
+  }
+
+  //maintenance prompt
+  .info-prompt {
+    font-size: 11px;
+
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .info-prompt svg {
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,42 @@
+.forCompanies header {
+  margin-top: 209px;
+  margin-bottom: 103px;
+}
+.forCompanies header h1 {
+  height: 360px;
+}
+@media (max-width: 1600px) {
+  .forCompanies header {
+    margin-top: 214px;
+    margin-bottom: 135px;
+  }
+}
+@media (max-width: 1440px) {
+  .forCompanies header {
+    margin-top: 225px;
+    margin-bottom: 221px;
+  }
+}
+@media (max-width: 1024px) {
+  .forCompanies header {
+    margin-bottom: 84px;
+  }
+}
+@media (max-width: 800px) {
+  .forCompanies header {
+    margin-top: 146px;
+    margin-bottom: 89px;
+  }
+  .forCompanies header h1 {
+    height: 256px;
+  }
+}
+@media (max-width: 600px) {
+  .forCompanies header {
+    margin-top: 135px;
+    margin-bottom: 135px;
+  }
+  .forCompanies header h1 {
+    height: 180px;
+  }
+}

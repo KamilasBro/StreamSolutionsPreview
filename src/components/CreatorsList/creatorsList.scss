@@ -1,0 +1,74 @@
+@import "../../assets/styles/scssPartials/colors";
+.creators h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.creators .creators-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 78px;
+  margin-top: 137.5px;
+}
+.creators .creators-list-item img,
+.creators .creators-list-item h4,
+.creators .creators-list-item h5,
+.creators .creators-list-item .socials {
+  position: relative;
+  top: -47px;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+.creators .creators-list-item img {
+  height: 460px;
+  width: 430px;
+  left: -14px;
+}
+.creators .creators-list-item {
+  max-height: 537px;
+  width: 402px;
+
+  background-color: $bg2;
+}
+.creators .creators-list-item .nickName {
+  margin-top: 30px;
+
+  color: $red !important;
+}
+.creators .creators-list-item .fullName {
+  font-size: 15px;
+  margin-top: 4px;
+}
+.creators .creators-list-item .socials {
+  margin-top: 8px;
+}
+.creators .creators-list-item .socials a {
+  margin-left: 8px;
+}
+.creators .creators-list-item .socials a:first-child {
+  margin-left: 0px;
+}
+@media (max-width: 800px) {
+  .creators .creators-list-item img {
+    height: 380px;
+    width: 380px;
+  }
+  .creators .creators-list-item {
+    max-height: 500px;
+    width: 350px;
+  }
+}
+@media (max-width: 600px) {
+  .creators .creators-list-item img {
+    height: 340px;
+    width: 310px;
+  }
+  .creators .creators-list-item {
+    max-height: 420px;
+    width: 280px;
+  }
+  .creators .creators-list-item .nickName {
+    margin-top: 25px;
+  }
+}

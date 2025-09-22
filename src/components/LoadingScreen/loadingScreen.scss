@@ -1,0 +1,42 @@
+@import "../../assets/styles/scssPartials/colors";
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  z-index: 5;
+
+  height: 100%;
+  width: 100%;
+  background-color: $bg;
+  background: url("../../assets/images/loadingScreen/bg.png") center;
+  background-size: cover;
+}
+.loading-screen img {
+  animation: spinning 1500ms linear infinite;
+}
+
+@media (max-width: 1024px) {
+  .loading-screen img {
+    height: 100px;
+  }
+}
+@media (max-width: 800px) {
+  .loading-screen img {
+    height: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .loading-screen img {
+    height: 60px;
+  }
+}

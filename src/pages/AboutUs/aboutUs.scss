@@ -1,0 +1,128 @@
+@import "../../assets/styles/scssPartials/colors";
+.aboutUs header {
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+.aboutUs header h1 {
+  height: 180px;
+}
+.aboutUs article {
+  padding-block: 80px;
+}
+.aboutUs article .container-title {
+  text-align: center;
+}
+.aboutUs article h3 {
+  text-transform: uppercase;
+  color: $red !important;
+  display: flex;
+  align-items: center;
+}
+.aboutUs .containerbox-item .h3-index {
+  margin-right: 30px;
+  font-size: 50px;
+}
+.aboutUs .containerbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+.aboutUs .containerbox img {
+  width: 556px;
+  height: 801px;
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+.aboutUs .containerbox-items {
+  width: 707px;
+}
+.aboutUs .containerbox-item {
+  margin-top: 50px;
+}
+.aboutUs .containerbox-item:first-child {
+  margin-top: 0px;
+}
+@media (max-width: 1600px) {
+  .aboutUs article p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1440px) {
+  .aboutUs header {
+    margin-top: 240px;
+    margin-bottom: 240px;
+  }
+  .aboutUs article h3 {
+    font-size: 25px;
+  }
+  .aboutUs .containerbox-item .h3-index {
+    margin-right: 20px;
+    font-size: 45px;
+  }
+  .aboutUs article p {
+    font-size: 14px;
+  }
+  .aboutUs .containerbox img {
+    width: 408px;
+    height: 779px;
+  }
+  .aboutUs .containerbox-items {
+    width: 560px;
+  }
+}
+@media (max-width: 1024px) {
+  .aboutUs .containerbox {
+    flex-direction: column;
+    margin-top: 70px;
+    row-gap: 40px;
+  }
+  .aboutUs .containerbox img {
+    width: 100%;
+    height: 750px;
+  }
+  .aboutUs .containerbox-items {
+    width: 100%;
+  }
+  .aboutUs .containerbox-item {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .aboutUs header {
+    margin-top: 175px;
+    margin-bottom: 175px;
+  }
+  .aboutUs header h1 {
+    height: 128px;
+  }
+  .aboutUs .containerbox {
+    margin-top: 115px;
+    row-gap: 132px;
+  }
+  .aboutUs .containerbox img {
+    height: 520px;
+  }
+}
+@media (max-width: 600px) {
+  .aboutUs header h1 {
+    height: 180px;
+  }
+  .aboutUs article h3 {
+    margin-bottom: 30px;
+
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .aboutUs .containerbox-item .h3-index {
+    margin-right: 10px;
+  }
+  .aboutUs .containerbox {
+    margin-top: 77px;
+    row-gap: 77px;
+  }
+  .aboutUs .containerbox img {
+    height: 500px;
+  }
+}

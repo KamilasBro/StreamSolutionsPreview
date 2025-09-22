@@ -1,0 +1,26 @@
+[
+    {
+        "nickName": "MistOfHazmat",
+        "fullName": "Jan Lipski",
+        "imgName": "mistofhazmat.png",
+        "socials":{
+            "youtube": "https://www.youtube.com/channel/UCRz_lBN33LOgGeXkLFVE3xw",
+            "twitch": "https://www.twitch.tv/mistofhazmat",
+            "ig": "https://www.instagram.com/mistofhazmat",
+            "kick": "https://kick.com/mistofhazmat",
+            "tiktok": "https://www.tiktok.com/@mistofhazmat"
+        }
+    },
+    {
+        "nickName": "mk11001_eMKa",
+        "fullName": "Miłosz Kocełuch",
+        "imgName": "mk11001_eMKa.png",
+        "socials":{
+            "youtube": "https://www.youtube.com/channel/UCMny8ZcyFjOQiU1w38NXChA",
+            "twitch": "https://www.twitch.tv/mk11001_emka",
+            "ig": "",
+            "kick": "https://kick.com/mk11001-emka",
+            "tiktok": "https://www.tiktok.com/@emka_mk11001"
+        }
+    }
+]

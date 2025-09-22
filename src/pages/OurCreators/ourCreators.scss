@@ -1,0 +1,33 @@
+.ourCreators header {
+  margin-top: 258px;
+  margin-bottom: 277px;
+}
+.ourCreators header h1 {
+  height: 180px;
+}
+.ourCreators .creators {
+  padding-block: 80px;
+}
+@media (max-width: 1024px) {
+  .ourCreators header {
+    margin-top: 289px;
+    margin-bottom: 289px;
+  }
+}
+@media (max-width: 800px) {
+  .ourCreators header {
+    margin-top: 146px;
+    margin-bottom: 262px;
+  }
+  .ourCreators header h1 {
+    height: 128px;
+  }
+}
+@media (max-width: 600px) {
+  .ourCreators header {
+    margin-top: 136px;
+  }
+  .ourCreators header h1 {
+    height: 135px;
+  }
+}

@@ -1,0 +1,123 @@
+@import "../../assets/styles/scssPartials/colors";
+.grid-container {
+  padding-block: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 150px;
+  grid-row-gap: 100px;
+}
+.grid-container div:nth-child(1) {
+  grid-area: 1 / 1;
+}
+.grid-container div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  grid-area: 1 / 2;
+}
+.grid-container div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  grid-area: 2 / 1;
+}
+.grid-container div:nth-child(4) {
+  grid-area: 2 / 2;
+}
+.grid-container h3 {
+  color: $red !important;
+  text-transform: uppercase;
+}
+.grid-container p {
+  margin-top: 23px;
+
+  line-height: 38px;
+}
+.grid-container img {
+  height: 387px;
+  width: 688px;
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+.gridImg1 {
+  margin-top: 40px;
+}
+.gridImg2 {
+  object-position: center 45%;
+}
+.gridImg3 {
+  object-position: center 25%;
+}
+.gridImg4 {
+  object-position: center 55%;
+}
+@media (max-width: 1600px) {
+  .grid-container {
+    align-items: center;
+    grid-column-gap: 90px;
+    grid-row-gap: 80px;
+  }
+  .grid-container p {
+    font-size: 15px;
+  }
+  .grid-container img {
+    height: 366px;
+    width: 651px;
+  }
+}
+@media (max-width: 1440px) {
+  .grid-container {
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
+  }
+  .grid-container img {
+    height: 406px;
+    width: 468px;
+  }
+}
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 100px;
+  }
+  .grid-container h3 {
+    text-align: center;
+  }
+  .grid-container div:nth-child(1) {
+    grid-area: 1 / 1;
+  }
+  .grid-container div:nth-child(2) {
+    grid-area: 2 / 1;
+  }
+  .grid-container div:nth-child(3) {
+    grid-area: 4 / 1;
+  }
+  .grid-container div:nth-child(4) {
+    grid-area: 3 / 1;
+  }
+  .grid-container img {
+    height: 455px;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .grid-container {
+    grid-row-gap: 75px;
+  }
+  .grid-container img {
+    height: 340px;
+  }
+}
+@media (max-width: 600px) {
+  .grid-container {
+    grid-row-gap: 50px;
+  }
+  .grid-container p {
+    text-align: center;
+  }
+  .grid-container img {
+    height: 240px;
+  }
+}

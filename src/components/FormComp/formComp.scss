@@ -1,0 +1,222 @@
+@import "../../assets/styles/scssPartials/colors";
+.formSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-block: 80px;
+  margin-inline: 103px;
+}
+.formSection .red {
+  color: $red;
+}
+.formSection div {
+  width: 484px;
+  text-align: center;
+}
+.formSection h3 {
+  text-transform: uppercase;
+}
+.formSection p {
+  margin-block: 50px;
+  max-width: 703px;
+}
+.formSection .logo {
+  height: 58px;
+  width: 250px;
+
+  margin-bottom: 50px;
+}
+.formSection .socials a {
+  margin-left: 15px;
+}
+.formSection .socials a:first-child {
+  margin-left: 0px;
+}
+.formSection form {
+  width: 628px;
+}
+.formSection form div {
+  width: 100%;
+}
+.formSection input,
+.formSection textarea {
+  width: 100%;
+  resize: none;
+
+  border: none;
+  border-radius: 8px;
+  outline: none;
+
+  margin-bottom: 50px;
+  padding-inline: 8px;
+
+  color: white !important;
+  font-size: 15px;
+  line-height: 32px;
+
+  background-color: $bg2;
+}
+.formSection input:-webkit-autofill,
+.formSection input:-webkit-autofill:hover,
+.formSection input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px $bg2 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.formSection input {
+  padding-block: 1.5px;
+  height: 35px;
+}
+.formSection textarea {
+  padding-block: 3px;
+  height: 300px;
+}
+.formSection input::placeholder,
+.formSection textarea::placeholder {
+  color: $red;
+  font-family: "Conthrax", sans-serif;
+}
+.formSection button {
+  padding-block: 1.5px;
+  padding-inline: 112.5px;
+
+  font-size: 13px;
+  line-height: 32px;
+}
+
+// .formSection .tempDisabled{
+//   filter: blur(5px);
+// }
+.formSection .submission-tile {
+  margin-top: 0px;
+  position: absolute;
+  z-index: 1;
+  display: flex; //none/flex
+  justify-content: center;
+  align-items: center;
+  width: 628px;
+  height: 555px;
+}
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.formSection .submission-tile svg {
+  animation: spinning 1500ms linear infinite;
+}
+.formSection .tempText {
+  display: none;
+  font-family: "kanit" sans-serif;
+  font-size: 20px;
+}
+@media (max-width: 1440px) {
+  .formSection {
+    margin-inline: 0px;
+  }
+  .formSection div {
+    width: 452px;
+  }
+  .formSection h3 {
+    font-size: 25px;
+  }
+  .formSection form {
+    width: 500px;
+  }
+  .formSection input,
+  .formSection textarea {
+    font-size: 13px;
+  }
+  .formSection button {
+    padding-inline: 112px;
+  }
+  .formSection .submission-tile {
+    margin-top: 30px;
+    width: 500px;
+  }
+  .formSection .tempText {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1024px) {
+  .formSection {
+    flex-direction: column;
+  }
+  .formSection p {
+    margin-block: 50px;
+    max-width: 100%;
+  }
+  .formSection div {
+    width: 100%;
+  }
+  .formSection form {
+    margin-top: 125px;
+    width: 100%;
+  }
+  .formSection input,
+  .formSection textarea {
+    font-size: 13px;
+  }
+  .formSection textarea {
+    margin-bottom: 50px;
+  }
+  .formSection button {
+    padding-inline: 112px;
+  }
+  .formSection .submission-tile {
+    margin-top: 30px;
+    width: 750px;
+  }
+  .formSection .tempText {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .formSection {
+    flex-direction: column;
+  }
+  .formSection p {
+    font-size: 12px;
+  }
+  .formSection .socials svg {
+    height: 30px;
+    width: 40px;
+  }
+  .formSection button {
+    padding-inline: 176px;
+    padding-block: 18.5px;
+  }
+
+  .formSection .submission-tile {
+    margin-top: 30px;
+    width: 580px;
+  }
+  .formSection .tempText {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .formSection h3 {
+    padding-inline: 20px;
+  }
+  .formSection .socials svg {
+    height: 30px;
+    width: 40px;
+  }
+  .formSection button {
+    padding-inline: 0;
+    width: 100%;
+  }
+
+  .formSection .submission-tile {
+    margin-top: 20px;
+    width: 310px;
+  }
+  .formSection .tempText {
+    font-size: 12px;
+  }
+}
