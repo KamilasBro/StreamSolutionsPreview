@@ -1,14 +1,19 @@
 @import "~bootstrap/scss/bootstrap";
 @import "./scssPartials/colors";
 @import "./scssPartials/initialSetter";
+
 @font-face {
   font-family: "Conthrax";
   src: local("Conthrax"), url("../fonts/conthrax-sb.otf") format("otf");
 }
+
 //basic
 :root {
+  color-scheme: dark;
   scroll-behavior: auto !important;
+  overflow-x: hidden;
 }
+
 body {
   margin: 0;
   background-color: $bg;
@@ -16,16 +21,20 @@ body {
   box-sizing: border-box;
   font-family: "Kanit", sans-serif;
 }
+
 ::-webkit-scrollbar {
   width: 5px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: $red;
   border-radius: 9px;
 }
+
 ::-webkit-scrollbar-track {
   background: $scrollbg;
 }
+
 button,
 .dropdown-menu {
   border-radius: 8px;
@@ -33,15 +42,18 @@ button,
 
   background-color: $red;
 }
+
 h3 {
   font-size: 30px;
   line-height: 57px;
 }
+
 p {
   font-size: 20px;
   font-weight: 300;
   line-height: 38px;
 }
+
 svg {
   shape-rendering: geometricPrecision;
 }
@@ -56,10 +68,12 @@ svg {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 .info-prompt {
   animation: fadeIn 1000ms;
   width: 100vw;
@@ -82,11 +96,13 @@ svg {
   font-weight: 600;
   text-align: center;
 }
+
 .info-prompt svg {
   margin-left: 200px;
 }
 
 @media (max-width: 1600px) {
+
   //width of whole page
   .app {
     width: 1400px;
@@ -97,7 +113,9 @@ svg {
     font-size: 14px;
   }
 }
+
 @media (max-width: 1440px) {
+
   //width of whole page
   .app {
     width: 1000px;
@@ -107,23 +125,30 @@ svg {
   .info-prompt {
     font-size: 12px;
   }
+
   .info-prompt svg {
     margin-left: 100px;
   }
 }
+
 @media (max-width: 1024px) {
+
   //width of whole page
   .app {
     width: 750px;
   }
 }
+
 @media (max-width: 800px) {
+
   //width of whole page
   .app {
     width: 580px;
   }
 }
+
 @media (max-width: 600px) {
+
   //basic
   h3 {
     font-size: 25px;
@@ -142,6 +167,7 @@ svg {
     padding-left: 13px;
     padding-right: 13px;
   }
+
   .info-prompt svg {
     margin-left: 20px;
   }

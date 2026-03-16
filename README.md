@@ -1,13 +1,10 @@
-# Stream Solutions website project
+# Stream Solutions
 
-## Technologies used:
+## Stack:
 1. React & TypeScript
-2. SCSS & Bootstrap
+2. React Router
+3. SCSS & Bootstrap
+4. Typed.js
 
-## Coding Solutions
-Reusable components, including wrapping components.
-
-## Needs change later on
-1. Handle forms with backend
-2. Handle data with proper database
-3. Little optimalization
+## Description
+Stream Solutions - A demo/preview of a conceptual media house website. Developed as a front-end implementation in close collaboration with a UX/UI designer, the project presents the proposed visual direction, layout, and interaction structure. This version serves as an early-stage concept rather than a finished commercial product.

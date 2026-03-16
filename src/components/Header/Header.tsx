@@ -62,7 +62,6 @@ const Header: React.FC<Props> = ({ children, h1text }) => {
       const typed = new Typed(ele.current, {
         strings: [modifiedWords.join(" ")], // Join the modified words into a single string
         typeSpeed: 30,
-        startDelay: 1500,
       });
 
       return () => {
